@@ -4,7 +4,6 @@ import collections
 import random
 
 
-# Below is the main code with English comments:
 def build_graph(cities_file, edges_file):
     """
     This function reads city information and edge data,
@@ -280,8 +279,8 @@ def print_top_betweenness_nodes(G_lcc, id_to_name, top_n=10):
 
 def main():
     # File names
-    cities_file = "airports\global-cities.dat"
-    edges_file = "airports\global-net.dat"
+    cities_file = r"airports\global-cities.dat"
+    edges_file = r"airports\global-net.dat"
 
     # Build the graph
     G, id_to_name, code_to_id = build_graph(cities_file, edges_file)
