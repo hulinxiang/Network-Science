@@ -143,6 +143,9 @@ def plot_degree_distribution(G_lcc):
     # Count how many times each degree occurs
     degree_count = collections.Counter(degrees)
 
+    # Remove degree 0 entries explicitly
+    degree_count = {k: v for k, v in degree_count.items() if k > 0}
+
     # Sort degrees (x-values) in ascending order
     x_vals = sorted(degree_count.keys())
 
