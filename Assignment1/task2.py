@@ -4,14 +4,6 @@ import collections
 import random
 
 
-# 以下是中文说明：代码会通过“|”分割的方式来读取 global-cities.dat，因为从示例中看，
-# 每一行的格式是 "AAA|1|Anaa"。其中：
-#   - parts[0] = 机场三字码（如 AAA）
-#   - parts[1] = 节点ID（如 1）
-#   - parts[2] = 城市或机场名称（如 Anaa）
-# 在读取 global-net.dat 时，我们假设它每行只包含两个整数，
-# 分别代表 "nodeID1 nodeID2" 的格式。
-
 # Below is the main code with English comments:
 def build_graph(cities_file, edges_file):
     """
